@@ -25,7 +25,7 @@ import redux from '../assets/tech/redux.png'
 import tailwind from '../assets/tech/tailwind.png'
 import nodejs from '../assets/tech/nodejs.png'
 
-import Company from '../assets/company/Company.png'
+import Company from '../assets/company/company.png'
 import darkCompany from '../assets/company/darkCompany.png'
 import projectCar from '../assets/projectCar.png'
 import projectTrip from '../assets/projectTrip.png'
