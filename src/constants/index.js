@@ -3,17 +3,7 @@ import {
   backend,
   creator,
   web,
-  mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
 } from '../assets';
 import html from '../assets/tech/html.png'
