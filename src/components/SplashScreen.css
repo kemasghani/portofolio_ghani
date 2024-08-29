@@ -16,31 +16,31 @@
 
 @keyframes fly-effect {
     0%, 100% {
-        transform: translate(-40px, 100%);
+        transform: translate(-60px, 100%);
     }
 
     50% {
-        transform: translate(-40px, 70%);
+        transform: translate(-60px, 70%);
     }
 }
 
 @keyframes mascot-slide-leave {
     100% {
-        transform: translate(-40px, -375%);
+        transform: translate(-60px, -375%);
     }
 
     0% {
-        transform: translate(-40px, 100%);
+        transform: translate(-60px, 100%);
     }
 }
 
 @keyframes mascot-slide {
     0% {
-        transform: translate(-40px, 285%);
+        transform: translate(-60px, 285%);
     }
 
     100% {
-        transform: translate(-40px, 100%);
+        transform: translate(-60px, 100%);
     }
 }
 
