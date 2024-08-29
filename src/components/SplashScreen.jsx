@@ -94,7 +94,7 @@ export default function SplashScreen({ onAnimationEnd }) {
                     {showSpeechBubble && (
                         <div id="SpeechBubble">Hi, I'm Ghani</div>
                     )}
-                    <img className='h-[300px] w-[200px]'
+                    <img className='h-[270px] w-[170px] md:h-[300px] md:w-[200px]'
                         src="https://res.cloudinary.com/doafxvpml/image/upload/v1724482739/IMG_20240824_110436_lzzd7e.png"
                         alt="Sample"
                     />
