@@ -1,0 +1,136 @@
+#Rectangle {
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    transform: translateY(70%);
+    animation: mascot-slide 1s;
+}
+
+#Rectangle.fly {
+    animation: fly-effect 2s ease-in-out infinite;
+}
+
+#Rectangle.disappear {
+    animation: mascot-slide-leave 2s;
+}
+
+@keyframes fly-effect {
+    0%, 100% {
+        transform: translate(0px, 100%);
+    }
+
+    50% {
+        transform: translate(0px, 70%);
+    }
+}
+
+@keyframes mascot-slide-leave {
+    100% {
+        transform: translate(0px, -375%);
+    }
+
+    0% {
+        transform: translate(0px, 100%);
+    }
+}
+
+@keyframes mascot-slide {
+    0% {
+        transform: translate(0px, 285%);
+    }
+
+    100% {
+        transform: translate(0px, 100%);
+    }
+}
+
+
+#SpeechBubble {
+    position: absolute;
+    transform-origin: 0% 100%;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    width: 160px;
+    padding: 17px 20px;
+    right: -145px;
+    top: -45px;
+    transform: scale(0);
+    animation-fill-mode: forwards;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dot {
+    position: absolute;
+    top: -20px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    animation: fall 2s linear infinite;
+    pointer-events: none;
+}
+
+.dot::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    transform: translate(-50%, -50%) rotate(45deg);
+    /* Adjust angle */
+    transform-origin: top;
+    border-radius: 50%;
+}
+
+#SpeechBubble::before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 5px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: blueviolet transparent transparent blueviolet;
+    transform: rotate(10deg);
+}
+
+
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh) translateX(0);
+    }
+
+    100% {
+        transform: translateY(200vh) translateX(0px);
+    }
+}
+
+@keyframes expand-bounce {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
