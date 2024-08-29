@@ -1,7 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+
 import computer from '../assets/computer.png'
 
 const Hero = () => {
@@ -24,6 +23,7 @@ const Hero = () => {
         </div>
 
       </div>
+      <img src={computer} className='computer-asset' alt="" loading='lazy' />
 
     </section>
   );
