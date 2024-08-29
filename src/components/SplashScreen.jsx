@@ -80,7 +80,7 @@ export default function SplashScreen({ onAnimationEnd }) {
     }, []);
 
     return (
-        <div className="h-[200vh] w-[200vw] overflow-visible container relative bg-white" onAnimationEnd={onAnimationEnd}>
+        <div className="h-[200vh] w-[100vw] overflow-visible container relative bg-white" onAnimationEnd={onAnimationEnd}>
             {dots.map((dot, index) => (
                 <div
                     key={index}
